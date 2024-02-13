@@ -13,7 +13,7 @@ let legendaGraf=document.querySelector('.tooltip');
 
 for(let conta=0;conta<=6;conta++){
 
-    let pecas_Item='<div class="pecas" style="background-image:url(img/'+pecas_painel[conta]+'); "><span class="tooltip">'+legendas[conta]+'</span></div>';
+    let pecas_Item='<div class="pecas" style="background-image:url(https://deniswsm.github.io/portifolio/img/'+pecas_painel[conta]+'); "><span class="tooltip">'+legendas[conta]+'</span></div>';
     painelDesign.insertAdjacentHTML('afterbegin',pecas_Item);
 
 }
