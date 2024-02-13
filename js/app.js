@@ -65,7 +65,7 @@ let painelIlust=document.querySelector('#painelIlustra');
 
 
 //função para o botão 1 de ilustrações
-tabagismo.onclick = function taba(){
+tabagismo.onclick = function taba1(){
 painelIlust.style.backgroundImage='url(../img/TABAGISMO.png) ';
 painelIlust.style.backgroundRepeat='no-repeat';
 painelIlust.style.backgroundSize='contain';
@@ -76,7 +76,7 @@ painelIlust.style.animation='none';
 }
 
 //função para o botão 2 de ilustrações
-havai.onclick = function taba(){
+havai.onclick = function taba2(){
     painelIlust.style.backgroundImage='url(../img/havai.jpg) ';
     painelIlust.style.backgroundRepeat='no-repeat';
     painelIlust.style.backgroundSize='contain';
@@ -86,7 +86,7 @@ havai.onclick = function taba(){
 
 
 //função para o botão 3 de ilustrações
-oscarito.onclick = function taba(){
+oscarito.onclick = function taba3(){
     painelIlust.style.backgroundImage='url(../img/grande_Otelo_Oscarito.jpg) ';
     painelIlust.style.backgroundRepeat='no-repeat';
     painelIlust.style.backgroundSize='contain';
@@ -95,7 +95,7 @@ oscarito.onclick = function taba(){
     }
 
 //função para o botão 4 de ilustrações
-vacina.onclick = function taba(){
+vacina.onclick = function taba4(){
     painelIlust.style.backgroundImage='url(../img/vacina1.jpg) ';
     painelIlust.style.backgroundRepeat='no-repeat';
     painelIlust.style.backgroundSize='contain';
@@ -104,7 +104,7 @@ vacina.onclick = function taba(){
     }
 
 //função para o botão 5 de ilustrações
-fred.onclick = function taba(){
+fred.onclick = function taba5(){
     painelIlust.style.backgroundImage='url(../img/diaristas2.png) ';
     painelIlust.style.backgroundRepeat='no-repeat';
     painelIlust.style.backgroundSize='contain';
@@ -113,7 +113,7 @@ fred.onclick = function taba(){
     }    
     
 //função para o botão 6 de ilustrações
-hair.onclick = function taba(){
+hair.onclick = function taba6(){
     painelIlust.style.backgroundImage='url(../img/Manuela_Hair.jpg) ';
     painelIlust.style.backgroundRepeat='no-repeat';
     painelIlust.style.backgroundSize='contain';
