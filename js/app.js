@@ -21,12 +21,12 @@ for(let conta=0;conta<=6;conta++){
 
 
 //Pegando modal design grafico
-let modalG=document.querySelector('#graficModel');
+//let modalG=document.querySelector('#graficModel');
 
 
 //pegando design Grande
 
-let designG=document.querySelector('#designBig');
+//let designG=document.querySelector('#designBig');
 
 
 
