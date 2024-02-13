@@ -66,7 +66,7 @@ let painelIlust=document.querySelector('#painelIlustra');
 
 //função para o botão 1 de ilustrações
 tabagismo.onclick = function taba1(){
-painelIlust.style.backgroundImage='url(../img/TABAGISMO.png) ';
+painelIlust.style.backgroundImage='url(img/TABAGISMO.png) ';
 painelIlust.style.backgroundRepeat='no-repeat';
 painelIlust.style.backgroundSize='contain';
 painelIlust.style.backgroundPosition='center';
@@ -77,7 +77,7 @@ painelIlust.style.animation='none';
 
 //função para o botão 2 de ilustrações
 havai.onclick = function taba2(){
-    painelIlust.style.backgroundImage='url(../img/havai.jpg) ';
+    painelIlust.style.backgroundImage='url(img/havai.jpg) ';
     painelIlust.style.backgroundRepeat='no-repeat';
     painelIlust.style.backgroundSize='contain';
     painelIlust.style.backgroundPosition='center';
@@ -87,7 +87,7 @@ havai.onclick = function taba2(){
 
 //função para o botão 3 de ilustrações
 oscarito.onclick = function taba3(){
-    painelIlust.style.backgroundImage='url(../img/grande_Otelo_Oscarito.jpg) ';
+    painelIlust.style.backgroundImage='url(img/grande_Otelo_Oscarito.jpg) ';
     painelIlust.style.backgroundRepeat='no-repeat';
     painelIlust.style.backgroundSize='contain';
     painelIlust.style.backgroundPosition='center';
@@ -96,7 +96,7 @@ oscarito.onclick = function taba3(){
 
 //função para o botão 4 de ilustrações
 vacina.onclick = function taba4(){
-    painelIlust.style.backgroundImage='url(../img/vacina1.jpg) ';
+    painelIlust.style.backgroundImage='url(img/vacina1.jpg) ';
     painelIlust.style.backgroundRepeat='no-repeat';
     painelIlust.style.backgroundSize='contain';
     painelIlust.style.backgroundPosition='center';
@@ -105,7 +105,7 @@ vacina.onclick = function taba4(){
 
 //função para o botão 5 de ilustrações
 fred.onclick = function taba5(){
-    painelIlust.style.backgroundImage='url(../img/diaristas2.png) ';
+    painelIlust.style.backgroundImage='url(img/diaristas2.png) ';
     painelIlust.style.backgroundRepeat='no-repeat';
     painelIlust.style.backgroundSize='contain';
     painelIlust.style.backgroundPosition='center';
@@ -114,7 +114,7 @@ fred.onclick = function taba5(){
     
 //função para o botão 6 de ilustrações
 hair.onclick = function taba6(){
-    painelIlust.style.backgroundImage='url(../img/Manuela_Hair.jpg) ';
+    painelIlust.style.backgroundImage='url(img/Manuela_Hair.jpg) ';
     painelIlust.style.backgroundRepeat='no-repeat';
     painelIlust.style.backgroundSize='contain';
     painelIlust.style.backgroundPosition='center';
@@ -146,7 +146,7 @@ paragrafo[0]=" Modelagem de um mocup para rotulagem de produtos.";
 
 for(let i=0; i<=7;i++){
 
-    let item='<div class="item-3d" style="background-image:url(../img/'+fundo[i]+');"><div class="texto3d"><h1>'+titu3d[i]+'</h1><p>'+paragrafo[i]+'</p></div></div>';
+    let item='<div class="item-3d" style="background-image:url(img/'+fundo[i]+');"><div class="texto3d"><h1>'+titu3d[i]+'</h1><p>'+paragrafo[i]+'</p></div></div>';
 
 galeria3d.insertAdjacentHTML('afterbegin',item);
     
