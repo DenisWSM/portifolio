@@ -103,9 +103,9 @@ body{
     
     -webkit-mask-image: url("../img/mask.png");
     -WEBKIT-mask-size:100%;
-   // mask-image: url("mask,png");img
+   // mask-image: url("mask,png");
     -webkit-mask-repeat: no-repeat;
-   //mask-repeat: no-repeat;img
+   //mask-repeat: no-repeat;
    animation: splash 2s;
   
     
