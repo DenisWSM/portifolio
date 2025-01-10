@@ -7,43 +7,72 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
-    <title>Denis Moraes</title>
+    <link rel="icon" type="image/jpg" href="img/logo_front.svg" />
+    <title>Denis Moraes - Programador</title>
     
 </head>
 <body>
-    <div id="menususpenso"><div id="logo">
-        <a href="index.html"><img src="img/logo_front.svg" alt=""></a>
-
+    <div id="menususpenso">
+        <div id="logo">
+            
+        <a href="index.html"><img src="img/logo_front.svg" alt=""></a><p>Denis Moraes - Programador</p>
+            
+        </div>
         <div id="botao_menu"><img src="img/menu_FILL0_wght400_GRAD0_opsz24.svg" alt=""></div>
-    </div>
         <div id="links">
-        <a href="#designer">Design gráfico</a>
-        <a href="#galerias" >Ilustrações</a>
-        <a href="#gal3d">Modelos 3D</a>
-        <a href="#links_sites">Sites</a>
-        <a href="#Endereco">Contatos</a>
+        <a href="#designer" onclick="fechaMenu()">UI/Designer</a>
+        <a href="#designBig" >WEB APPS</a>        
+        <a href="#links_sites" onclick="fechaMenu()">Projetos</a>
+        <a href="#Endereco" onclick="fechaMenu()">Contatos</a>
     </div>
-    
 </div>
+    
+
    <section id="topo">
-    <img src="img/foto2.jpg" id="image-topo" />
+    
     <div id="brand">
-    <h1>Denis Moraes</h1>
-    <p>Designer e Front-end developer</p>
+    <h1 class="devname">Design e desenvolvimento</h1>
+    <p>Sites, Web apps, landing pages e sistemas de banco de dados.</p>
     
   </div>
    </section>
 
-   <div id="graficModel">
+   
 
-<div id="designBig"></div>
-
-   </div>
-<section id="designer">
-    <div id="painelDesign1"> <h1>Design gráfico</h1>
-        <p>Propaganda, logomarcas, identidade visual.</p></div>
-    <div id="painelDesign2">
+<div id="designBig">
+    <h1>WEB APPs</h1>
+    <div class="cards">
+<img src="img/appsweb.jpg" alt="" data-tooltip="Designed by Freepik">
+<p>Os aplicativos web são leves, não precisam ser instalados no seu dispositivos e adaptam-se facilmente a qualquer formato de tela.</p>
+</div>
+<div class="cards">
+<img src="img/tipor_app.jpg" alt="" data-tooltip="Designed by Freepik">
+<p>São muitas as possibilidades. Veja apenas alguns exemplos:
+    <ul>
+        <li>Agendamento de clientes</li>
+        <li>Boletim online</li>
+        <li>Controle de estoque</li>
+        <li>Blogs de eventos</li>
         
+    </ul>
+</p>
+</div>
+
+</div>
+
+  
+<section id="designer">
+    <div id="painelDesign1"> <h1>UI/Designer</h1>
+        <p>POTOTIPAGEM direcionada para melhores resultados.</p></div>
+    <div id="painelDesign2">
+        <img src="img/prot.svg" />
+        <p id="textoprot">Uso como ferramenta de prototipagem o PENPOT, software de código aberto com excelente recursos profissionais.
+            A prototipagem nos dará uma visão inicial do projeto em termos de design e experiência do usuário. Nessa
+            fase do projeto podemos definir como será a visualização nos diversos dispositivos, chamamos isso
+            de responsividade.
+
+            
+        </p>
         
         
     </div>
@@ -56,38 +85,18 @@
 
    
    
-   <section id="galerias">
-    
-
-    <div id="ilustraGal">
-        <div id="tituloIlustra"><h1 >Ilustrações</h1><p>Cartoon, caricaturas e publicitárias. Veja alguns exemplos.</p></div>
-        <div class="tub-ilustra" id="ilust1" ></div>
-        <div class="tub-ilustra" id="ilust2"></div>
-        <div class="tub-ilustra" id="ilust3"></div>
-        <div class="tub-ilustra" id="ilust4"></div>
-        <div class="tub-ilustra" id="ilust5"></div>
-        <div class="tub-ilustra" id="ilust6"></div>
-    </div>
-
-    <div id="painelIlustra"></div>    
-
-   </section>
-
-  
-   <div id="titulo3d"><h1>Modelagem 3d</h1></div>
    
-
-
-   <div id="gal3d">
+  
+  
 
    </div>
 
    <div id="sites">
     <div class="links_sites" id="links_sites">
-    <h1>Alguns sites já desenvolvidos</h1>
-    <a href="https://deniswsm.github.io/lisa-arquiteta/index.html" target="_blank" ><img src="img/lisa.png" alt="">Arquiteta Lisa Tavares</a>
-        <a href="http://www.ismasaude.com.br/" target="_blank" ><img src="http://www.ismasaude.com.br/wp-content/uploads/2015/09/ISMA_Logo.png" alt="">Instituto Senior de Medicina Avançada</a>
-
+    <h1>Alguns projetos:</h1>
+    <a href="https://deniswsm.github.io/lisa-arquiteta/index.html" target="_blank" ><img src="img/lisa.png" alt="">Site Arquiteta Lisa Tavares</a>
+    <a href="https://deniswsm.github.io/myplayer/index.html" target="_blank" ><img src="img/logo_front.svg" alt="">Player de músicas</a> 
+    <a href="https://github.com/DenisWSM/Agenda_Compromissos-PHP-sqlite3-" target="_blank" ><img src="img/logo_front.svg" alt="">Agenda de compromissos</a>   
    </div></div>
 
   
@@ -105,10 +114,10 @@
     <div id="mapa">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d989.7707518986756!2d-38.49815383049516!3d-7.116379168781361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a4058c871da2c7%3A0xa7643842a10fb580!2sDenis%20Moraes%20-%20Designer%20e%20Front-End%20Developer!5e0!3m2!1spt-BR!2sbr!4v1707128215426!5m2!1spt-BR!2sbr"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" border-radius="5px"></iframe>
     </div>
-    <div><p>Desenvolvido por: Denis Moraes</p></div>
+    <div id="assina"><p>Desenvolvido por: Denis Moraes</p></div>
 </footer>
 
-
-    <script src="js/app.js" type="text/javascript"></script>
+<script src="js/app.js"></script>
+   
 </body>
 </html>

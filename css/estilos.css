@@ -12,11 +12,12 @@ body{
 #menususpenso{
    width: 100%;
     height: auto;
-    background-image: linear-gradient(#c00303,#7b1010);
+    background-image: linear-gradient(#000000,#141414);
     padding: 5px;
     display: flex;
-    box-shadow: 0px  0px 10px 0px #030303 ;
     flex-direction: row;
+    box-shadow: 0px  0px 10px 0px #030303 ;
+ 
     align-items: center;
     justify-content:space-around;
     position: fixed;
@@ -25,10 +26,23 @@ body{
 
 }
 
+#logo{
+width: 30vw;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+align-items: center;
+
+}
+
+#logo img{
+    width: 50px;
+}
+
 #botao_menu{
     width: 35px;
     height: 35px;
-    background-color: #7b1010;
+    background-color: #000;
     display:none;
     color: #fff;
 }
@@ -46,70 +60,68 @@ body{
     font-size: 30pt;
   }
 
-  #tituloIlustra {
-    width: 100%;
- 
-   text-align: center;
-   
   
-  }
-
-  #tituloIlustra h1{
-    color: #ffffff;
-  }
-
   p {
     font-family: "Francois One", sans-serif;
     color: #fff;
     font-size: 10pt;
 
-  }
+
+     }
+
+#textoprot{
+    font-family:Arial, Helvetica, sans-serif;
+       padding: 30px;
+        color: #ffffff;
+        font-size: 12pt;
+    
+    
+        
+}
+
 #topo{
     width: 100%;
-    height:max-content;
+    height:90vh;
  padding-top: 50px;
    background-color: #000000;
     background-image: url('../img/fundotop.jpg');
     background-repeat: no-repeat;
     background-size:cover;
+   
     background-attachment: fixed;
-    
+    background-position: center;
+    text-align: center;
     display: flex;
    flex-direction: row;
     flex-wrap: wrap;
-    justify-content:baseline;
+   align-items: center;
        
 }
 #brand{
-    width: 40%;
+    width: 90%;
     
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content:flex-start;
 
     animation: logoName 2s;
+    animation-timeline: view();
 }
+
+.devname{
+    font-family: "Francois One", sans-serif;
+    color: #fff;
+    font-size: xx-large;
+  }
 
 #brand p{
-    color:#ffb380ff;
-}
-
-
-#image-topo {
-    width:45vw;
-    height: 100%;
-    
-
-    
-    -webkit-mask-image: url("../img/mask.png");
-    -WEBKIT-mask-size:100%;
-   // mask-image: url("mask,png");
-    -webkit-mask-repeat: no-repeat;
-   //mask-repeat: no-repeat;
-   animation: splash 2s;
-  
+    color:#fff;
+    font-size:medium;
     
 }
+
+
+
 
 @keyframes splash {
     from{
@@ -189,17 +201,78 @@ body{
     z-index: 2;
 }
 #designBig{
-    width: 50vw;
-    height: 90vh;
-    background-color: #484646;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    padding-top: 35px;
+    background-color: #000000;
+   background-image: linear-gradient(#000, rgb(58, 58, 58));
+    background-image: cross-fade();
+    background-size: cover;
+    align-items: center;
+    
+    
     
 
+}
+#designBig .cards{
+    display: flex;
+    flex-direction: column;
+   
+    width: 300px;
+    height: 300px;
+  padding: 10px;
+  animation: animaApp ;
+   animation-timeline: view();
+    
+}
+
+
+@keyframes animaApp {
+    0%{
+        opacity: 0;
+       margin-right: -200px;
+        
+    }
+    50%{
+        opacity: 0.5;
+        margin-right: -25px;
+      
+        
+    }
+    100%{
+        opacity: 1;
+        margin-right: 0px;
+        
+    }
+}
+
+#designBig img{
+    width: 300px;
+    height: 150px;  
+    
+}
+#designBig p{
+    
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:medium;
+}
+
+#designBig li{
+   margin-left: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    color: #fff;
+    font-size:medium;
 }
 
 #designer{
     width: 100%;
     height:max-content;
-    background-color: #7b1010;
+    background-color: #180202;
     background-image: url('../img/fundo_designer.svg');
     background-repeat:repeat;
     background-size:cover;
@@ -211,6 +284,10 @@ body{
     align-items: center;
   
     
+}
+
+#designer  h1{
+    color:#fff;
 }
 
 .tooltip{
@@ -229,7 +306,7 @@ body{
 
 #painelDesign1{
     width: 400px;
-    height:auto;
+   
  
     display: flex;
     flex-direction: column;
@@ -238,166 +315,32 @@ body{
 
 #painelDesign2{
     width: 70%;
-    max-height:fit-content;
-   margin-top: 10px;
+  
+   margin-top: 5px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:safe;
+    flex-wrap: nowrap;
+    justify-content:space-around;
+    padding-bottom: 20px;  
+    
     
     
 }
 
+#painelDesign2 img{
+   width: 30vw;
+   
+    animation: anima3d ;
+    animation-timeline: view();
+}
+
 #painelDesign1 h1{
-    margin-top: 60px;
+    margin-top: 40px;
    
 }
 #painelDesign1 p{
     font-size:medium;
   
-}
-
-
-.pecas{
-    width: 200px;
-    height: 200px;
-    background-color: transparent;
-    border-radius: 6px;
-    padding-bottom: 4px;
-    margin: 5px;
-    background-size:contain;
-    display: flex;
-    flex-direction: column;
-    justify-content:flex-end;
-    align-items: center;
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: 0.5s ease-in;
-
-}
-
-
-.pecas:hover {
-
-    transform: scale(150%);
-    background-color: #7a7575;
-    cursor: pointer;
-    box-shadow: 3px 3px 5px #000000;
-  
-    
-}
-.pecas:hover .tooltip{
-    display: flex;
-}
-
-
-
-
-
-
-
-#galerias{
-    width: 100%;
-    height:90vh;
-   background-color: #000000;
-  padding-bottom: 50px;
-    display: flex;
-flex-direction: row;
-justify-content:space-around;
-align-items: center;
-    
-}
-
-
-#ilustraGal{
-    width: 400px;
-    height: 40vh;
- 
-   
-    padding: 6px;
-    display:flex;
-    justify-content:space-between;
-    flex-wrap: wrap;
-}
-.tub-ilustra{
-    width: 110px;
-    height: 110px;
-    background-color: #fff;
-    margin: 9px;
-    border-radius: 8px;
-}
-
-.tub-ilustra:hover{
-    
-  rotate: 360deg;
-  transition: rotate ease ;
-  transition-duration: 2s;
- 
-   
-}
-
-#ilust1{
-    background-image: url("../img/TABAGISMO.png") ;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#ilust2{
-    background-image: url("../img/havai.jpg") ;
-    background-size:cover;
-    background-repeat: no-repeat;
-   
-}
-
-#ilust3{
-    background-image: url("../img/grande_Otelo_Oscarito.jpg") ;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#ilust4{
-    background-image: url("../img/vacina1.jpg") ;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#ilust5{
-    background-image: url("../img/diaristas2.png") ;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#ilust6{
-    background-image: url("../img/Manuela_Hair.jpg") ;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#painelIlustra{
-    width: 40vw;
-    height: 60vh;
-    display: block;
-  border-radius: 20px;
-    background-color:transparent;
-    background-image: url('../img/tub_ilustra.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-animation: tubIcoIlust 2s infinite;
-   transition: 1s ease-in;
-   
-}
-
-@keyframes animaIlustra {
-    from{
-        margin-left: -500px;
-        opacity: 0;
-    }
-    to{
-        margin-left: 0;
-        opacity: 100%;
-        
-    }
-    
 }
 
 @keyframes animaPainel {
@@ -422,22 +365,7 @@ animation: tubIcoIlust 2s infinite;
 
 
 
-#gal3d { 
-   
-     background-image: url("../img/fundo3d.png");
-     background-repeat: no-repeat;
-     background-size:cover;
-     background-attachment: fixed;
-     padding-top: 120px;
-     display: flex;
-     flex-direction:row;
-     flex-wrap: wrap;
-     align-items: center;
-     justify-content: center;
-     
- 
- 
-}
+
 
 /*#designGal {
     width: 400px;
@@ -450,40 +378,7 @@ animation: tubIcoIlust 2s infinite;
 }
 */
 
-#titulo3d {
- width: 100%;
- height: 60px;
-  margin-top: 60px;
- position: absolute;
- text-align: center;
-   
-}
 
-.item-3d {
-    width: 30vw;
-    height: 60vh;
- 
- background-repeat: no-repeat;
- background-size: cover;
- background-position: center;
-  margin: 25px;
-  background-color: #000 ;
-  
-  box-shadow: 3px 3px 6px #000;
-  border-radius: 10px;
-     color:#fff;
-    box-sizing:border-box;
-    display: flex;
-    flex-direction:column;
-    flex-wrap: nowrap;
-    overflow:hidden;
-    justify-content:end;
-    align-items: center;
-   animation: anima3d ease;
-   animation-duration: 2s;  
-   animation-timeline: view();  
-   animation-range: 0% 50%;
-}
 /*
 .img-3d{
       width: 75%;
@@ -495,31 +390,8 @@ animation: tubIcoIlust 2s infinite;
 }
 */
 
-.item-3d h1,p{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
 
-.item-3d h1{
-font-size: 20pt;
-margin: 5px;
-}
-
-.item-3d p{
-    font-size: 10pt;
-    margin:5px;
-   
-    }
-
-.texto3d{
-    width: 100%;
-    height: auto ;
-   
-    background-color: #000000;
-    opacity: 0.7;
-    
-    
-   
-}    
+ 
 
 
 @keyframes anima3d {
@@ -537,12 +409,12 @@ margin: 5px;
 
 #sites {
     width: 100vw;
-    height: 70vh;
+    height: auto;
     background-image: url('../img/foto.jpg') ;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    
+background-blend-mode: multiply;
     padding: 5px;
     background-color: #484646;
     display: flex;
@@ -552,11 +424,9 @@ margin: 5px;
 }
 .links_sites {
     width: 50vw;
+
     
-    background-color: #000000;
-    background-image: linear-gradient(45deg,#000,rgba(156, 6, 18, 0.933),#635151);
-    border: 1px solid #000;
-    box-shadow: 2px 2px 3px #000;
+  
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -574,27 +444,30 @@ margin: 5px;
     margin-top: 20px;
     display: flex;
     align-items:center ;
+    font-size: 14pt;
 
 }
 
 .links_sites img {
     width: 55px;
     height: 55px;
-    
+    background-color: #000;
     border-radius: 50%;
     margin-right: 5px;
 
 }
 
 footer{
-    height: 400px;
+    height: 50vh;
     background-color: #000;
     padding: 20px;
     color:#fff;
     font-family: "Francois One", sans-serif;
     display:flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items:normal;
+    justify-content:space-around;
 }
 
 #Endereco{
@@ -643,36 +516,49 @@ footer p  {
     margin-top: 10px;
     
 }
-#mapa{
+#mapa iframe{
     display: flex;
+    width: 30vw;
+    height: 300px;
+}
+#assina{
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    align-items: baseline;
 }
 
 
 @media (max-width: 800px) {
     #logo{
-        width: 93%;
+        width: 60vw;
        
         display:flex;
         flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+      
+        
+      
     }
     #menususpenso{
       
-      flex-direction: column;
+      flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
-        width:100vw;
+       width: 100vw;
         
         
     }
 
     
     #topo{
+       
         flex-direction:column;       
         justify-content:space-around;
-        height:max-content;
+        height:40vh;
         align-items: center;
+        background-size:cover;
+       
+       
     }
     #image-topo {
         width: 60vw;
@@ -680,6 +566,8 @@ footer p  {
     
     #brand{
         width: max-content;
+        margin-top: 50px;
+        height: 30vh;
     }
 
     #botao_menu{
@@ -694,6 +582,18 @@ footer p  {
    width: 100%;
    
       }
+
+      .devname{
+        font-family: "Francois One", sans-serif;
+        color: #fff;
+        font-size: 20pt;
+      }
+    
+    #brand p{
+        width: 70vw;
+        color:#fff;
+        font-size: 12pt;
+    }
     
       #links{
         display: none;
@@ -708,10 +608,37 @@ footer p  {
         background-color: #000;
         color: #fff;
       }
+      #designer{
+       text-align: center;
+    
+       
+        display: flex;
+        flex-direction:column;
+        flex-wrap: nowrap;
+        justify-content:space-around;
+        align-items: center;
+      
+        
+    }
+    #designBig{
+        flex-direction: column;
+    }
 
-      .pecas{
-        width: 100%;
+      #painelDesign2{
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+       font-family: Arial, Helvetica, sans-serif;
       }
+
+      #painelDesign2 img{
+        width: 70vw;
+        height: 30vhx;
+        margin-left: auto;
+        margin-right: auto;
+        animation: anima3d ;
+        animation-timeline: view();
+    }
 
       #galerias{
        
@@ -730,30 +657,7 @@ footer p  {
        
       }
 
-      #ilustraGal{
-        width: 90%;
-        height: 300px;
-        
-      justify-content:center;
-        align-items: center;
-
-      }
-
-      .tub-ilustra{
-        width: 75px;
-        height: 75px;
-        border-radius: 3px;
       
-      }
-
-      #painelIlustra{
-        width: 70%;
-        height:35vh;
-        background-color:transparent;
-      }
-      #gal3d {
-        width: 100vw;;
-      }
 
       .item-3d{
         width: 100%;
@@ -772,10 +676,15 @@ footer p  {
       footer{
         
         flex-direction: column;
+        margin-top: 30px;
+      margin-bottom: 20px;
       }
 
-      #mapa{
-        display:none;
+      #mapa iframe{
+        display:block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 80vw;
       }
 
       #Endereco{
